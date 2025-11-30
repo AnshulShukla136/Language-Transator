@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .chatbot-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #26242b;
+    margin-bottom: 20px;
+  }
+  
+  .language-selectors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  
+  .language-selectors select {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 14px;
+  }
+  
+  .chat-box {
+    background-color: #f1f3f6;
+    height: 300px;
+    overflow-y: auto;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    scroll-behavior: smooth;
+  }
+  
+  .message {
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  
+  .user-message {
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .bot-message {
+    text-align: left;
+    color: #4a00e0;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .input-area button {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .input-area button:hover {
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
